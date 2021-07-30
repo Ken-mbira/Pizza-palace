@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Place</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="page1-title" class="col-6">
+                <p>Pizza Palace.</p>
+            </div>
+            <!-- Cart button -->
+            <div class="cart col-6">
+                <div id="items-tally"></div>
+                <div class="checkout">
+                    <button id="checkout-button">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Landing Page -->
+    <div class="page container-fluid" id="page1">
+        <div class="page1-content row">
+            <div class="col-6">
+                <ul class="navigation">
+                    <li><a class="list1" href="#">Home</a></li>
+                    <li><a class="list1" href="#">Deliveries</a></li>
+                    <li><a class="list1" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="orientation">
+            <p>Hi, welcome to the pizza place, this is a chance to have yourself a mouth-watering experience...<br>With options to have your pick in terms of pizza-size, crust, topping and last but not least delivery being put in place...nothing is standing
+                in your way to becoming royalty in your pizza palace.</p>
+        </div>
+        <div class="navigation-button">
+            <button id="topage2" class="order-button">ORDER NOW!</button>
+
+        </div>
+
+    </div>
+    <!-- Deliveries Page -->
+    <div class="page" id="page2">
+        <button id="topage1">Go back to page 1</button>
+    </div>
+    <footer class="contact">
+        <div class="contact-heading">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contact-list">
+            <ul>
+                <li>Phone <img src="images/phone.png" alt="phone image">: +254 712345678</li>
+                <li>Email <img src="images/email.png">: pizzapalace@gmail.com</li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h2>We are also on social media</h2>
+            <ul>
+                <li class="social-media-icons"><img src="images/twitter.png" alt="twitter icon"></li>
+                <li class="social-media-icons"><img src="images/facebook.png" alt="facebook icon"></li>
+                <li class="social-media-icons"><img src="images/instagram.png" alt="instagram icon"></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
