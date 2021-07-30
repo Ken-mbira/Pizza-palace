@@ -2,7 +2,7 @@ body,
 html {
     height: 150vh;
     margin: 0;
-    background-image: url(/images/background1.jpg);
+    background-image: url(/images2/backgrounds/background1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,7 +15,7 @@ html {
 }
 
 .page1-content {
-    background-image: url(/images/background2.jpg);
+    background-image: url(/images2/backgrounds/background2.jpg);
     background-position: center;
     background-size: cover;
     height: 40vh;
