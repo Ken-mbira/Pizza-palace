@@ -11,6 +11,15 @@ html {
     height: 75%;
 }
 
+.contacts {
+    height: 25%;
+}
+
+.social-media-icons {
+    list-style-type: none;
+    display: inline;
+}
+
 #page2 {
     display: none;
 }
