@@ -22,12 +22,20 @@ html {
 .navigation-list {
     list-style-type: none;
     color: black;
+    width: 200px;
 }
 
 .navigation-icon {
     display: block;
     color: black;
-    padding: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.navigation-icon:hover {
+    background-color: black;
+    color: white;
 }
 
 .page {
