@@ -11,11 +11,37 @@ html {
     height: 75%;
 }
 
+.navigation {
+    background-image: url(images/pics/pizza1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    background-repeat: no-repeat;
+}
+
+.navigation-list {
+    list-style-type: none;
+    color: black;
+}
+
+.navigation-icon {
+    display: block;
+    color: black;
+    padding: 30px;
+}
+
 .page {
     margin: auto;
     width: 70%;
-    background-color: white;
-    height: 100%;
+    background-color: transparent;
+    height: 95%;
+    color: white;
+}
+
+.page-title {
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Style Script', cursive;
 }
 
 .contacts {
