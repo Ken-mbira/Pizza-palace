@@ -62,6 +62,24 @@ html {
     font-family: 'Style Script', cursive;
 }
 
+.container-fluid {
+    position: relative;
+}
+
+.button-container {
+    text-align: center;
+}
+
+#order-button:hover {
+    background-color: black;
+    color: white;
+}
+
+#order-button {
+    font-family: 'Style Script', cursive;
+    font-size: 50px;
+}
+
 .contacts {
     height: 25%;
 }
