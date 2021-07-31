@@ -91,4 +91,47 @@ html {
 
 #page2 {
     display: none;
+    background-color: white;
+}
+
+#page2 .page-title {
+    color: black;
+    text-decoration: underline;
+}
+
+.pizza-images {
+    width: fit-content;
+    height: 200px;
+    margin: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.image-section {
+    margin: auto;
+}
+
+.menu-sections {
+    margin: auto;
+    width: fit-content;
+    background-image: url(images/pics/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100;
+}
+
+.pizza-details {
+    list-style-type: none;
+    text-align: left;
+}
+
+#add-item {
+    background-color: green;
+}
+
+#add-item:hover {
+    background-color: black;
+    color: white;
 }
