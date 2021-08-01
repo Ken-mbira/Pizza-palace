@@ -183,6 +183,22 @@
                     </ul>
                 </div>
             </div>
+            <div class="spec" id="mode">
+                <div>
+                    <p>Choose whether to pick-up the order or to have it dropped:</p>
+                </div>
+                <div id="mode-choice">
+                    <ul style="list-style-type: none;">
+                        <li><input type="radio" id="delivery" value="Delivery" name="mode"><label for="delivery">Delivery</label></li>
+                        <div id="delivery-option">
+                            <p>Please be aware that by choosing to have <br>the package delivered you are subscribing to a <br>payment charge of 200/=.</p>
+                            <label>Enter your location:</label>
+                            <input type="text" id="location">
+                        </div>
+                        <li><input type="radio" id="pickup" value="Pick-up" name="mode"><label for="pickup">Pick-up</label></li>
+                    </ul>
+                </div>
+            </div>
             <div class="spec">
                 <button id="add-to-cart">Add to Cart</button><button class="topage2" style="background-color: green;">Back</button><button id="check">Check</button>
             </div>

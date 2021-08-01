@@ -32,18 +32,29 @@ $(document).ready(function() {
     $("#add-to-cart").click(function() {
         $(".cart").show();
     })
+    $("#delivery").change(function() {
+        $("#delivery-option").show();
+    })
+    $("#pickup").change(function() {
+        $("#delivery-option").hide();
+    })
     $("[name=pizza-type]").change(function() {
         var pizzaType = $("input[name=pizza-type]:checked").val();
         $("#name-of-pizza").html(pizzaType);
     })
-    var pizzaType = $("input[name=pizza-type]:checked").val();
-    var pizzaNumber = $("input#item-number").val()
-    var pizzaSize = $("input[name=pizza-size]:checked").val();
-    var pizzaToppings = $("input[name=toppings]:checked").val();
-    var drinks = $("input[name=drinks]:checked").val();
-    $("#check").click(function() {
-
-        alert(drinks)
+    var pizzaType;
+    var pizzaNumber;
+    var pizzaSize;
+    var pizzaToppings;
+    var drinks;
+    var mode;
+    $("#add-to-cart").click(function() {
+        pizzaType = $("input[name=pizza-type]:checked").val();
+        pizzaNumber = $("input#item-number").val()
+        pizzaSize = $("input[name=pizza-size]:checked").val();
+        pizzaToppings = $("input[name=toppings]:checked").val();
+        drinks = $("input[name=drinks]:checked").val();
+        mode = $("input#location").val();
     })
 
 

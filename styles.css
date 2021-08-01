@@ -179,3 +179,7 @@ html {
 #name-of-pizza {
     background-color: white;
 }
+
+#delivery-option {
+    display: none;
+}
