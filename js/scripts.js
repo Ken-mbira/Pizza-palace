@@ -38,7 +38,7 @@ $(document).ready(function() {
 
 function PizzaType(name, price) {
     this.name = pizzaName;
-    this.name = pizzaPrice;
+    this.price = pizzaPrice;
 }
 
 var cheeseType = new PizzaType("cheese", 500);
@@ -49,3 +49,12 @@ var margheritaType = new PizzaType("margherita", 550);
 var hawaiianType = new PizzaType("margherita", 1250);
 var buffaloType = new PizzaType("buffalo", 700);
 var greekType = new PizzaType("greek", 850);
+
+function ToppingType(name, price) {
+    this.name = toppingName;
+    this.price = toppingName;
+}
+
+var pepperoniTopping = new ToppingType("pepperoni", 100);
+var mushroomTopping = new ToppingType("mushroom", 150);
+var onionTopping = new ToppingType("onion", 90);
