@@ -50,6 +50,15 @@ var hawaiianType = new PizzaType("margherita", 1250);
 var buffaloType = new PizzaType("buffalo", 700);
 var greekType = new PizzaType("greek", 850);
 
+function PizzaSize(sizeName, sizePrice) {
+    this.sizeName = sizeName;
+    this.sizePrice = sizePrice;
+}
+
+var sizeLarge = new PizzaSize("large", 100);
+var sizeMedium = new PizzaSize("medium", 0);
+var sizeSmall = new PizzaSize("small", -50);
+
 function ToppingType(toppingName, toppingPrice) {
     this.name = toppingName;
     this.price = toppingPrice;
