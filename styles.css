@@ -1,6 +1,6 @@
 body,
 html {
-    height: 150%;
+    height: fit-content;
 }
 
 .page-content {
@@ -8,7 +8,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 75%;
+    height: fit-content;
 }
 
 .navigation {
@@ -138,7 +138,12 @@ html {
 
 #page3 {
     display: none;
-    text-align: center;
+    color: black;
+    background-color: grey;
+    width: fit-content;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
 }
 
 #pizza-choice {
@@ -151,4 +156,9 @@ html {
 
 #add-to-cart {
     background-color: green;
+}
+
+#page3-title {
+    text-decoration: underline;
+    font-family: 'Style Script', cursive;
 }
