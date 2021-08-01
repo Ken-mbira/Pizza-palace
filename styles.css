@@ -175,3 +175,7 @@ html {
     height: fit-content;
     display: none;
 }
+
+#name-of-pizza {
+    background-color: white;
+}

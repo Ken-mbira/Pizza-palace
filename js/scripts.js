@@ -1,3 +1,4 @@
+// User Interface
 $(document).ready(function() {
     $(".topage2").click(function() {
         $("#page1").hide();
@@ -31,47 +32,63 @@ $(document).ready(function() {
     $("#add-to-cart").click(function() {
         $(".cart").show();
     })
+    $("[name=pizza-type]").change(function() {
+        var pizzaType = $("input[name=pizza-type]:checked").val();
+        $("#name-of-pizza").html(pizzaType);
+    })
+    var pizzaType = $("input[name=pizza-type]:checked").val();
+    var pizzaNumber = $("input#item-number").val()
+    var pizzaSize = $("input[name=pizza-size]:checked").val();
+    var pizzaToppings = $("input[name=toppings]:checked").val();
+    var drinks = $("input[name=drinks]:checked").val();
+    $("#check").click(function() {
+
+        alert(drinks)
+    })
+
 
 
 
 })
 
-function PizzaType(pizzaName, pizzaPrice) {
-    this.pizzaName = pizzaName;
-    this.pizzaPrice = pizzaPrice;
-}
+// Business Logic 
 
-var cheeseType = new PizzaType("cheese", 500);
-var veggieType = new PizzaType("veggie", 450);
-var meatType = new PizzaType("meat", 950);
-var pepperoniType = new PizzaType("pepperoni", 1000);
-var margheritaType = new PizzaType("margherita", 550);
-var hawaiianType = new PizzaType("margherita", 1250);
-var buffaloType = new PizzaType("buffalo", 700);
-var greekType = new PizzaType("greek", 850);
+// function PizzaType(pizzaName, pizzaPrice) {
+//     this.pizzaName = pizzaName;
+//     this.pizzaPrice = pizzaPrice;
+// }
 
-function PizzaSize(sizeName, sizePrice) {
-    this.sizeName = sizeName;
-    this.sizePrice = sizePrice;
-}
+// var cheeseType = new PizzaType("cheese", 500);
+// var veggieType = new PizzaType("veggie", 450);
+// var meatType = new PizzaType("meat", 950);
+// var pepperoniType = new PizzaType("pepperoni", 1000);
+// var margheritaType = new PizzaType("margherita", 550);
+// var hawaiianType = new PizzaType("margherita", 1250);
+// var buffaloType = new PizzaType("buffalo", 700);
+// var greekType = new PizzaType("greek", 850);
 
-var sizeLarge = new PizzaSize("large", 100);
-var sizeMedium = new PizzaSize("medium", 0);
-var sizeSmall = new PizzaSize("small", -50);
+// function PizzaSize(sizeName, sizePrice) {
+//     this.sizeName = sizeName;
+//     this.sizePrice = sizePrice;
+// }
 
-function ToppingType(toppingName, toppingPrice) {
-    this.name = toppingName;
-    this.price = toppingPrice;
-}
+// var sizeLarge = new PizzaSize("large", 100);
+// var sizeMedium = new PizzaSize("medium", 0);
+// var sizeSmall = new PizzaSize("small", -50);
 
-var pepperoniTopping = new ToppingType("pepperoni", 100);
-var mushroomTopping = new ToppingType("mushroom", 150);
-var onionTopping = new ToppingType("onion", 90);
+// function ToppingType(toppingName, toppingPrice) {
+//     this.name = toppingName;
+//     this.price = toppingPrice;
+// }
 
-function DrinkType(drinkName, drinkPrice) {
-    this.drinkName = drinkName;
-    this.drinkPrice = drinkPrice;
-}
+// var pepperoniTopping = new ToppingType("pepperoni", 100);
+// var mushroomTopping = new ToppingType("mushroom", 150);
+// var onionTopping = new ToppingType("onion", 90);
 
-var sodaDrink = new DrinkType("soda", 50);
-var juiceDrink = new DrinkType("juice", 100);
+// function DrinkType(drinkName, drinkPrice) {
+//     this.drinkName = drinkName;
+//     this.drinkPrice = drinkPrice;
+// }
+
+// var sodaDrink = new DrinkType("soda", 50);
+// var juiceDrink = new DrinkType("juice", 100);
