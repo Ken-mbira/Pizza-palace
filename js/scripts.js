@@ -36,9 +36,9 @@ $(document).ready(function() {
 
 })
 
-function PizzaType(name, price) {
-    this.name = pizzaName;
-    this.price = pizzaPrice;
+function PizzaType(pizzaName, pizzaPrice) {
+    this.pizzaName = pizzaName;
+    this.pizzaPrice = pizzaPrice;
 }
 
 var cheeseType = new PizzaType("cheese", 500);
@@ -50,11 +50,19 @@ var hawaiianType = new PizzaType("margherita", 1250);
 var buffaloType = new PizzaType("buffalo", 700);
 var greekType = new PizzaType("greek", 850);
 
-function ToppingType(name, price) {
+function ToppingType(toppingName, toppingPrice) {
     this.name = toppingName;
-    this.price = toppingName;
+    this.price = toppingPrice;
 }
 
 var pepperoniTopping = new ToppingType("pepperoni", 100);
 var mushroomTopping = new ToppingType("mushroom", 150);
 var onionTopping = new ToppingType("onion", 90);
+
+function DrinkType(drinkName, drinkPrice) {
+    this.drinkName = drinkName;
+    this.drinkPrice = drinkPrice;
+}
+
+var sodaDrink = new DrinkType("soda", 50);
+var juiceDrink = new DrinkType("juice", 100);
