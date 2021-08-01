@@ -131,7 +131,7 @@ html {
     background-color: green;
 }
 
-#add-item:hover {
+.add-item:hover {
     background-color: black;
     color: white;
 }
@@ -161,4 +161,8 @@ html {
 #page3-title {
     text-decoration: underline;
     font-family: 'Style Script', cursive;
+}
+
+.topage1 {
+    float: left;
 }
