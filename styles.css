@@ -127,11 +127,28 @@ html {
     text-align: left;
 }
 
-#add-item {
+.add-item {
     background-color: green;
 }
 
 #add-item:hover {
     background-color: black;
     color: white;
+}
+
+#page3 {
+    display: none;
+    text-align: center;
+}
+
+#pizza-choice {
+    display: none;
+}
+
+.spec {
+    margin: 10px;
+}
+
+#add-to-cart {
+    background-color: green;
 }

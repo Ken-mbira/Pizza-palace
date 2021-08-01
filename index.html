@@ -37,6 +37,8 @@
                 <button class="topage2" id="order-button">Order Now!</button>
             </div>
         </div>
+
+
         <!-- Page2: Deliveries+Menu -->
         <div class="page container-fluid" id="page2">
             <div class="row page-title">
@@ -50,7 +52,7 @@
                             <li>Name: Cheese</li>
                             <li>Price: 500</li>
                         </ul>
-                        <button id="add-item">Add</button>
+                        <button class="add-item">Add</button>
                     </div>
                     <div class="col-3 pizza-images">
                         <img src="images/pics/pizza3.jpg" width="150px" height="100px">
@@ -58,7 +60,7 @@
                             <li>Name: Veggie</li>
                             <li>Price: 450</li>
                         </ul>
-                        <button id="add-item">Add</button>
+                        <button class="add-item">Add</button>
                     </div>
                     <div class="col-3 pizza-images">
                         <img src="images/pics/pizza4.jpg" width="150px" height="100px">
@@ -66,7 +68,7 @@
                             <li>Name: Meat</li>
                             <li>Price: 950</li>
                         </ul>
-                        <button id="add-item">Add</button>
+                        <button class="add-item">Add</button>
                     </div>
                     <div class="col-3 pizza-images">
                         <img src="images/pics/pizza6.jpg" width="150px" height="100px">
@@ -74,7 +76,7 @@
                             <li>Name: Pepperoni</li>
                             <li>Price: 1000</li>
                         </ul>
-                        <button id="add-item">Add</button>
+                        <button class="add-item">Add</button>
                     </div>
                 </div>
                 <div class="row image-section">
@@ -84,7 +86,7 @@
                             <li>Name: Margherita</li>
                             <li>Price: 550</li>
                         </ul>
-                        <button id="add-item">Add</button>
+                        <button class="add-item">Add</button>
                     </div>
                     <div class="col-3 pizza-images">
                         <img src="images/pics/pizza8.jpg" width="150px" height="100px">
@@ -92,7 +94,7 @@
                             <li>Name: Hawaiian</li>
                             <li>Price: 1250</li>
                         </ul>
-                        <button id="add-item">Add</button>
+                        <button class="add-item">Add</button>
                     </div>
                     <div class="col-3 pizza-images">
                         <img src="images/pics/pizza9.jpg" width="150px" height="100px">
@@ -100,7 +102,7 @@
                             <li>Name: Buffalo</li>
                             <li>Price: 700</li>
                         </ul>
-                        <button id="add-item">Add</button>
+                        <button class="add-item">Add</button>
                     </div>
                     <div class="col-3 pizza-images">
                         <img src="images/pics/pizza10.jpg" width="150px" height="100px">
@@ -108,13 +110,78 @@
                             <li>Name: Greek</li>
                             <li>Price: 850</li>
                         </ul>
-                        <button id="add-item">Add</button>
+                        <button class="add-item">Add</button>
                     </div>
                 </div>
             </div>
+
             <button class="topage1">PREVIOUS</button>
 
         </div>
+
+        <!-- Page3 -->
+        <div class="container-fluid page" id="page3">
+            <div class="name-section spec">
+                <div>
+                    <p>Item:<input class="dropdown-content"></p>
+                </div>
+                <div class="dropdown-content">
+                    <ul style="list-style-type: none;" id="pizza-choice">
+                        <li><input type="radio" id="choice1" value="Cheese" name="pizza-type"><label for="choice1">Cheese</label></li>
+                        <li><input type="radio" id="choice2" value="Veggie" name="pizza-type"><label for="choice2">Veggie</label></li>
+                        <li><input type="radio" id="choice3" value="Meat" name="pizza-type"><label for="choice3">Meat</label></li>
+                        <li><input type="radio" id="choice4" value="Pepperoni" name="pizza-type"><label for="choice4">Pepperoni</label></li>
+                        <li><input type="radio" id="choice5" value="Margherita" name="pizza-type"><label for="choice5">Margherita</label></li>
+                        <li><input type="radio" id="choice6" value="Hawaiian" name="pizza-type"><label for="choice6">Hawaiian</label></li>
+                        <li><input type="radio" id="choice7" value="Buffalo" name="pizza-type"><label for="choice7">Buffalo</label></li>
+                        <li><input type="radio" id="choice8" value="Greek" name="pizza-type"><label for="choice8">Greek</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="number-of-items" class="spec">
+                <label for="">Please enter the number of pizzas you want:</label><br>
+                <input type="number" id="item-number">
+            </div>
+            <div id="size-of-items" class="spec">
+                <div>
+                    <p>Size:</p>
+                </div>
+                <div>
+                    <ul style="list-style-type: none;">
+                        <li><input type="radio" id="large-size" name="pizza-size"><label for="large-size">Large</label></li>
+                        <li><input type="radio" id="medium-size" name="pizza-size"><label for="medium-size">Medium</label></li>
+                        <li><input type="radio" id="small-size" name="pizza-size"><label for="small-size">Small</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="toppings" class="spec">
+                <div>
+                    <p>Enter the toppings you want:</p>
+                </div>
+                <div id="toppings-dropdown">
+                    <ul style="list-style-type: none;">
+                        <li><input type="radio" id="pepperoni-toppings" name="toppings"><label for="pepperoni-toppings">Pepperoni</label></li>
+                        <li><input type="radio" id="mushroom-toppings" name="toppings"><label for="mushroom-toppings">Mushrooms</label></li>
+                        <li><input type="radio" id="onion-toppings" name="toppings"><label for="onion-toppings">Onions</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="drinks" class="spec">
+                <div>
+                    <p>Drinks</p>
+                </div>
+                <div id="drinks-dropdown">
+                    <ul style="list-style-type: none;">
+                        <li><input type="radio" id="soda" name="soda"><label for="soda">Soda</label></li>
+                        <li><input type="radio" id="juice" name="soda"><label for="juice">Juice</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spec">
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
     </div>
     <div class="contacts" id="contacts">
         <h1>Contact US</h1>
