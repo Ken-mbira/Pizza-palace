@@ -166,3 +166,12 @@ html {
 .topage1 {
     float: left;
 }
+
+.cart {
+    float: right;
+    background-color: white;
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    display: none;
+}

@@ -28,6 +28,9 @@ $(document).ready(function() {
     $("#page1").show(function() {
         $(".topage1").hide();
     })
+    $("#add-to-cart").click(function() {
+        $(".cart").show();
+    })
 
 
 
