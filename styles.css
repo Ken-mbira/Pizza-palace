@@ -186,6 +186,7 @@ html {
 
 #page4 {
     display: none;
+    width: fit-content;
 }
 
 #if-delivery {
@@ -198,4 +199,7 @@ html {
 
 #alert {
     display: none;
+    background-color: black;
+    color: white;
+    height: 50px;
 }

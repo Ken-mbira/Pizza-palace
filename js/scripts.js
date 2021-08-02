@@ -108,11 +108,11 @@ var myFunction = () => {
             return price;
         }
         pricer6();
-        alert(price)
     }
     pricer();
     var newOrder = new PizzaChoice(pizzaType, pizzaNumber, pizzaSize, pizzaToppings, drinks, mode, price)
 }
+
 
 
 //User Interface
@@ -128,6 +128,7 @@ $(document).ready(function() {
     })
     $(".topage1").click(function() {
         $(".topage1").hide();
+        $("#page4").hide();
         $("#page3").hide();
         $("#page2").hide();
         $("#page1").show();
@@ -204,11 +205,14 @@ $(document).ready(function() {
         $("#page4").show();
     })
     $("#add-to-cart").last().click(function() {
+        myFunction();
         $("#name-log").text(pizzaType);
         $("#number-log").text(pizzaNumber);
         $("#size-log").text(pizzaSize);
         $("#topping-log").text(pizzaToppings);
         $("#drink-log").text(drinks);
+        $("#price-log").text(price);
+
     })
     $("#payment").click(function() {
         $("#alert").slideDown();
@@ -221,46 +225,3 @@ $(document).ready(function() {
         $("#delivery-location").text(location + ".");
     })
 })
-
-
-// Business Logic 
-
-// function PizzaType(pizzaName, pizzaPrice) {
-//     this.pizzaName = pizzaName;
-//     this.pizzaPrice = pizzaPrice;
-// }
-
-// var cheeseType = new PizzaType("cheese", 500);
-// var veggieType = new PizzaType("veggie", 450);
-// var meatType = new PizzaType("meat", 950);
-// var pepperoniType = new PizzaType("pepperoni", 1000);
-// var margheritaType = new PizzaType("margherita", 550);
-// var hawaiianType = new PizzaType("margherita", 1250);
-// var buffaloType = new PizzaType("buffalo", 700);
-// var greekType = new PizzaType("greek", 850);
-
-// function PizzaSize(sizeName, sizePrice) {
-//     this.sizeName = sizeName;
-//     this.sizePrice = sizePrice;
-// }
-
-// var sizeLarge = new PizzaSize("large", 100);
-// var sizeMedium = new PizzaSize("medium", 0);
-// var sizeSmall = new PizzaSize("small", -50);
-
-// function ToppingType(toppingName, toppingPrice) {
-//     this.name = toppingName;
-//     this.price = toppingPrice;
-// }
-
-// var pepperoniTopping = new ToppingType("pepperoni", 100);
-// var mushroomTopping = new ToppingType("mushroom", 150);
-// var onionTopping = new ToppingType("onion", 90);
-
-// function DrinkType(drinkName, drinkPrice) {
-//     this.drinkName = drinkName;
-//     this.drinkPrice = drinkPrice;
-// }
-
-// var sodaDrink = new DrinkType("soda", 50);
-// var juiceDrink = new DrinkType("juice", 100);

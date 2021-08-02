@@ -160,6 +160,19 @@
                     </ul>
                 </div>
             </div>
+            <div id="crust" class="spec">
+                <div>
+                    <p>Crust</p>
+                </div>
+                <div>
+                    <ul style="list-style-type: none;">
+                        <li><input type="radio" id="stuffed" name="crust" value="Stuffed"><label for=""></label></li>
+                        <li><input type="radio" id="cracker" name="crust" value="Cracker"><label for=""></label></li>
+                        <li><input type="radio" id="flat" name="crust" value="Flat"><label for=""></label></li>
+                        <li><input type="radio" id="thin" name="crust" value="Thin"><label for=""></label></li>
+                    </ul>
+                </div>
+            </div>
             <div id="drinks" class="spec">
                 <div>
                     <p>Drinks</p>
@@ -188,7 +201,7 @@
                 </div>
             </div>
             <div class="spec">
-                <button id="add-to-cart">Add to Cart</button><button class="topage2" style="background-color: green;">Back</button><button onclick="myFunction()">Check</button>
+                <button id="add-to-cart">Add to Cart</button><button class="topage2" style="background-color: green;">Back</button>
             </div>
         </div>
 
@@ -210,6 +223,9 @@
                 <div class="logs">
                     <p>Drinks:<span id="drink-log"></span></p>
                 </div>
+                <div class="logs">
+                    <p>Price:<span id="price-log"></span></p>
+                </div>
             </div>
             <div>
                 <button class="topage2">New</button><button id="payment">Pay</button>
@@ -217,7 +233,7 @@
 
             <!-- Alert -->
             <div id="alert">
-                <p>Thank you for choosing to shop with us, your package<span id="if-delivery"> will be delivered to <span id="delivery-location"></span></span><span id="if-pickup"> will be waiting for you!</span></p>
+                <p>Thank you for choosing to shop<br> with us, your package<span id="if-delivery"> will be delivered to <span id="delivery-location"></span></span><span id="if-pickup"> will be waiting for you!</span></p>
             </div>
         </div>
 
