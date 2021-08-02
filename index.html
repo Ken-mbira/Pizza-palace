@@ -18,7 +18,7 @@
 <body>
     <div class="page-content">
         <button class="topage1"><img src="images/icons/home-icon.png" alt="home icon" width="30px" height="30px"></button>
-        <div class="cart"><img src="images/icons/cart icon.png" width="30px" height="30px" style="padding: 5px;"><span id="tally"></span></div>
+        <button class="cart"><img src="images/icons/cart icon.png" width="30px" height="30px" style="padding: 5px;"><br>Checkout<span id="tally"></span></button>
 
         <!-- Page1:Landingpage -->
         <div class="page container-fluid" id="page1">
@@ -189,6 +189,30 @@
             </div>
             <div class="spec">
                 <button id="add-to-cart">Add to Cart</button><button class="topage2" style="background-color: green;">Back</button><button onclick="myFunction()">Check</button>
+            </div>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="page" id="page4">
+            <div id="log">
+                <div class="logs">
+                    <p>Item:<span id="name-log"></span></p>
+                </div>
+                <div class="logs">
+                    <p>Number of pizzas:<span id="number-log"></span></p>
+                </div>
+                <div class="logs">
+                    <p>Size:<span id="size-log"></span></p>
+                </div>
+                <div class="logs">
+                    <p>Toppings:<span id="topping-log"></span></p>
+                </div>
+                <div class="logs">
+                    <p>Drinks:<span id="drink-log"></span></p>
+                </div>
+            </div>
+            <div>
+                <button class="topage2">New</button><button id="payment">Pay</button>
             </div>
         </div>
 

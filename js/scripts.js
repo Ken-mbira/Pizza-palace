@@ -12,6 +12,7 @@ $(document).ready(function() {
     $(".topage2").click(function() {
         $("#page1").hide();
         $("#page3").hide();
+        $("#page4").hide();
         $("#page2").show();
         $(".topage1").show();
     })
@@ -77,20 +78,27 @@ $(document).ready(function() {
         $("#delivery-option").show();
     })
     $("#pickup").change(function() {
-            $("#delivery-option").hide();
-        })
-        // $("[name=pizza-type]").change(function() {
-        //     var pizzaType = $("input[name=pizza-type]:checked").val();
-        //     $("#name-of-pizza").html(pizzaType);
-        // })
-
+        $("#delivery-option").hide();
+    })
     $("#add-to-cart").click(function() {
         pizzaNumber = parseInt($("input#item-number").val());
         pizzaSize = $("input[name=pizza-size]:checked").val();
         pizzaToppings = $("input[name=toppings]:checked").val();
         drinks = $("input[name=drinks]:checked").val();
         mode = $("input[name=mode]:checked").val();
-        alert(pizzaType)
+    })
+    $(".cart").click(function() {
+        $("#page1").hide();
+        $("#page2").hide();
+        $("#page3").hide();
+        $("#page4").show();
+    })
+    $("#add-to-cart").last().click(function() {
+        $("#name-log").text(pizzaType);
+        $("#number-log").text(pizzaNumber);
+        $("#size-log").text(pizzaSize);
+        $("#topping-log").text(pizzaToppings);
+        $("#drink-log").text(drinks);
     })
 })
 
