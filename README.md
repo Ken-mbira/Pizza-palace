@@ -35,7 +35,7 @@ Git-hub: Ken-mbira
 # Live page
 To view the live site click[here](https://ken-mbira.github.io/Pizza-palace/)
 
-#Licence information
+# Licence information
 MIT License
 
 Copyright (c) [2021] [Ken-Mbira]
