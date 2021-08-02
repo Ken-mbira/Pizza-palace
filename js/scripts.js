@@ -117,6 +117,9 @@ var myFunction = () => {
 //User Interface
 
 $(document).ready(function() {
+
+    var newOrder = new PizzaChoice(pizzaType, pizzaNumber, pizzaSize, pizzaToppings, drinks, mode, price)
+
     $(".topage2").click(function() {
         $("#page1").hide();
         $("#page3").hide();
