@@ -35,6 +35,38 @@ $(document).ready(function() {
         $("#page3").show();
         $(".topage1").show();
     })
+    $("#cheese-add").click(function() {
+        $("#name-of-pizza").html("Cheese")
+        pizzaType = "Cheese"
+    })
+    $("#veggie-add").click(function() {
+        $("#name-of-pizza").html("Veggie")
+        pizzaType = "Veggie"
+    })
+    $("#meat-add").click(function() {
+        $("#name-of-pizza").html("Meat")
+        pizzaType = "Meat"
+    })
+    $("#pepperoni-add").click(function() {
+        $("#name-of-pizza").html("Pepperoni")
+        pizzaType = "Pepperoni"
+    })
+    $("#margherita-add").click(function() {
+        $("#name-of-pizza").html("Margherita")
+        pizzaType = "Margherita"
+    })
+    $("#hawaiian-add").click(function() {
+        $("#name-of-pizza").html("Hawaiian")
+        pizzaType = "Hawaiian"
+    })
+    $("#buffalo-add").click(function() {
+        $("#name-of-pizza").html("Buffalo")
+        pizzaType = "Buffalo"
+    })
+    $("#greek-add").click(function() {
+        $("#name-of-pizza").html("Greek")
+        pizzaType = "Greek"
+    })
     $("#page1").show(function() {
         $(".topage1").hide();
     })
@@ -45,20 +77,20 @@ $(document).ready(function() {
         $("#delivery-option").show();
     })
     $("#pickup").change(function() {
-        $("#delivery-option").hide();
-    })
-    $("[name=pizza-type]").change(function() {
-        var pizzaType = $("input[name=pizza-type]:checked").val();
-        $("#name-of-pizza").html(pizzaType);
-    })
+            $("#delivery-option").hide();
+        })
+        // $("[name=pizza-type]").change(function() {
+        //     var pizzaType = $("input[name=pizza-type]:checked").val();
+        //     $("#name-of-pizza").html(pizzaType);
+        // })
 
     $("#add-to-cart").click(function() {
-        pizzaType = $("input[name=pizza-type]:checked").val();
         pizzaNumber = parseInt($("input#item-number").val());
         pizzaSize = $("input[name=pizza-size]:checked").val();
         pizzaToppings = $("input[name=toppings]:checked").val();
         drinks = $("input[name=drinks]:checked").val();
         mode = $("input[name=mode]:checked").val();
+        alert(pizzaType)
     })
 })
 
