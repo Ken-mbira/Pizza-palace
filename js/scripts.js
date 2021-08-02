@@ -111,14 +111,13 @@ var myFunction = () => {
         alert(price)
     }
     pricer();
+    var newOrder = new PizzaChoice(pizzaType, pizzaNumber, pizzaSize, pizzaToppings, drinks, mode, price)
 }
 
 
 //User Interface
 
 $(document).ready(function() {
-
-    var newOrder = new PizzaChoice(pizzaType, pizzaNumber, pizzaSize, pizzaToppings, drinks, mode, price)
 
     $(".topage2").click(function() {
         $("#page1").hide();
