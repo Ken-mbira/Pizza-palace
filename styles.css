@@ -187,3 +187,15 @@ html {
 #page4 {
     display: none;
 }
+
+#if-delivery {
+    display: none;
+}
+
+#if-pickup {
+    display: none;
+}
+
+#alert {
+    display: none;
+}

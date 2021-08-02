@@ -210,6 +210,16 @@ $(document).ready(function() {
         $("#topping-log").text(pizzaToppings);
         $("#drink-log").text(drinks);
     })
+    $("#payment").click(function() {
+        $("#alert").slideDown();
+        if (mode === "Delivery") {
+            $("#if-delivery").show();
+        } else {
+            $("#if-pickup").show();
+        }
+        var location = $("#location").val();
+        $("#delivery-location").text(location + ".");
+    })
 })
 
 
