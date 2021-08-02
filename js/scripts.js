@@ -1,4 +1,13 @@
 // User Interface
+
+var pizzaType;
+var pizzaNumber;
+var pizzaSize;
+var pizzaToppings;
+var drinks;
+var mode;
+var price;
+
 $(document).ready(function() {
     $(".topage2").click(function() {
         $("#page1").hide();
@@ -42,25 +51,123 @@ $(document).ready(function() {
         var pizzaType = $("input[name=pizza-type]:checked").val();
         $("#name-of-pizza").html(pizzaType);
     })
-    var pizzaType;
-    var pizzaNumber;
-    var pizzaSize;
-    var pizzaToppings;
-    var drinks;
-    var mode;
+
     $("#add-to-cart").click(function() {
         pizzaType = $("input[name=pizza-type]:checked").val();
-        pizzaNumber = $("input#item-number").val()
+        pizzaNumber = parseInt($("input#item-number").val());
         pizzaSize = $("input[name=pizza-size]:checked").val();
         pizzaToppings = $("input[name=toppings]:checked").val();
         drinks = $("input[name=drinks]:checked").val();
-        mode = $("input#location").val();
+        mode = $("input[name=mode]:checked").val();
     })
-
-
-
-
 })
+
+var myFunction = () => {
+    function PizzaChoice(pizzaType, pizzaNumber, pizzaSize, pizzaToppings, drinks, mode, price) {
+        this.pizzaType = pizzaType;
+        this.pizzaNumber = pizzaNumber;
+        this.pizzaSize = pizzaSize;
+        this.pizzaToppings = pizzaToppings;
+        this.drinks = drinks;
+        this.mode = mode;
+        this.price = price;
+    }
+
+    var pricer = () => {
+        var pricer1 = () => {
+            if (pizzaType === "Cheese") {
+                price = 500;
+                return price;
+            } else if (pizzaType === "Veggie") {
+                price = 450;
+                return price;
+            } else if (pizzaType === "Meat") {
+                price = 950;
+                return price;
+            } else if (pizzaType === "Pepperoni") {
+                price = 10000;
+                return price;
+            } else if (pizzaType === "Margherita") {
+                price = 550;
+                return price;
+            } else if (pizzaType === "Hawaiian") {
+                price = 1250;
+                return price;
+            } else if (pizzaType === "Buffalo") {
+                price = 700;
+                return price;
+            } else if (pizzaType === "Greek") {
+                price = 850;
+                return price;
+            }
+        }
+        pricer1();
+
+        var pricer2 = () => {
+            if (pizzaToppings === "Pepperoni") {
+                price = price + 100;
+                return price;
+            } else if (pizzaToppings === "Mushrooms") {
+                price = price + 150;
+                return price;
+            } else if (pizzaToppings === "Onions") {
+                price = price + 90;
+                return price
+            } else {
+                price = price;
+                return price;
+            }
+        }
+        pricer2();
+
+        var pricer3 = () => {
+            if (pizzaSize === "Large") {
+                price = price + 100;
+                return price;
+            } else if (pizzaSize === "Medium") {
+                price = price + 50;
+                return price;
+            } else {
+                price = price;
+                return price;
+            }
+        }
+        pricer3();
+
+        var pricer4 = () => {
+            if (drinks === "Soda") {
+                price = price + 100;
+                return price;
+            } else if (drinks === "Juice") {
+                price = price + 150;
+                return price;
+            } else {
+                price = price;
+                return price;
+            }
+        }
+        pricer4();
+
+        var pricer5 = () => {
+            if (mode === "Delivery") {
+                price = price + 200;
+                return price;
+            } else {
+                price = price;
+                return price;
+            }
+        }
+        pricer5();
+
+        var pricer6 = () => {
+            price = price * pizzaNumber;
+            return price;
+        }
+        pricer6();
+        alert(price)
+    }
+    pricer();
+}
 
 // Business Logic 
 
