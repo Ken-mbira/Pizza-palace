@@ -6,7 +6,12 @@ var pizzaToppings;
 var drinks;
 var mode;
 var price;
-
+var namePrice;
+var numberPrice;
+var sizePrice;
+var toppingPrice;
+var drinkPrice;
+var crustPrice;
 
 
 //User Interface
@@ -90,6 +95,7 @@ $(document).ready(function() {
     })
     $("#add-to-cart").last().click(function() {
         $("#name-log").text(pizzaType);
+
         $("#number-log").text(pizzaNumber);
         $("#size-log").text(pizzaSize);
         $("#topping-log").text(pizzaToppings);
@@ -97,6 +103,12 @@ $(document).ready(function() {
         $("#crust-log").text(crust)
         myFunction();
         $("#price-log").text(price);
+        $("#name-price-log").text(namePrice);
+        $("#number-price-log").text(numberPrice);
+        $("#size-price-log").text(sizePrice);
+        $("#topping-price-log").text(toppingPrice);
+        $("#drink-price-log").text(drinkPrice);
+        $("#crust-price-log").text(crustPrice);
 
 
     })
@@ -130,27 +142,36 @@ var myFunction = () => {
             var pricer1 = () => {
                 if (pizzaType === "Cheese") {
                     price = 500;
+                    namePrice = 500;
+
                     return price;
                 } else if (pizzaType === "Veggie") {
                     price = 450;
+                    namePrice = 450;
                     return price;
                 } else if (pizzaType === "Meat") {
                     price = 950;
+                    namePrice = 950;
                     return price;
                 } else if (pizzaType === "Pepperoni") {
-                    price = 10000;
+                    price = 1000;
+                    namePrice = 1000;
                     return price;
                 } else if (pizzaType === "Margherita") {
                     price = 550;
+                    namePrice = 550;
                     return price;
                 } else if (pizzaType === "Hawaiian") {
                     price = 1250;
+                    namePrice = 1250;
                     return price;
                 } else if (pizzaType === "Buffalo") {
                     price = 700;
+                    namePrice = 700;
                     return price;
                 } else if (pizzaType === "Greek") {
                     price = 850;
+                    namePrice = 850;
                     return price;
                 }
             }
@@ -159,15 +180,19 @@ var myFunction = () => {
             var pricer2 = () => {
                 if (pizzaToppings === "Pepperoni") {
                     price = price + 100;
+                    toppingPrice = 100;
                     return price;
                 } else if (pizzaToppings === "Mushrooms") {
                     price = price + 150;
+                    toppingPrice = 150;
                     return price;
                 } else if (pizzaToppings === "Onions") {
                     price = price + 90;
+                    toppingPrice = 90;
                     return price
                 } else {
                     price = price;
+                    toppingPrice = 0;
                     return price;
                 }
             }
@@ -176,12 +201,15 @@ var myFunction = () => {
             var pricer3 = () => {
                 if (pizzaSize === "Large") {
                     price = price + 100;
+                    sizePrice = 100;
                     return price;
                 } else if (pizzaSize === "Medium") {
                     price = price + 50;
+                    sizePrice = 50;
                     return price;
                 } else {
                     price = price;
+                    sizePrice = 0;
                     return price;
                 }
             }
@@ -190,18 +218,23 @@ var myFunction = () => {
             var pricer4 = () => {
                 if (crust === "Stuffed") {
                     price = price + 100;
+                    crustPrice = 100;
                     return price;
                 } else if (crust === "Cracker") {
                     price = price + 200;
+                    crustPrice = 200;
                     return price;
                 } else if (crust === "Flat") {
                     price = price + 150;
+                    crustPrice = 150;
                     return price;
                 } else if (crust === "Thin") {
                     price = price + 80;
+                    crustPrice = 80;
                     return price;
                 } else {
                     price = price;
+                    crustPrice = "none chosen";
                     return price;
                 }
             }
@@ -210,12 +243,15 @@ var myFunction = () => {
             var pricer5 = () => {
                 if (drinks === "Soda") {
                     price = price + 100;
+                    drinkPrice = 100;
                     return price;
                 } else if (drinks === "Juice") {
                     price = price + 150;
+                    drinkPrice = 150;
                     return price;
                 } else {
                     price = price;
+                    drinkPrice = "no drink"
                     return price;
                 }
             }
@@ -233,6 +269,7 @@ var myFunction = () => {
             pricer6();
             var pricer7 = () => {
                 price = price * pizzaNumber;
+                numberPrice = namePrice * pizzaNumber;
                 return price;
             }
             pricer7();
