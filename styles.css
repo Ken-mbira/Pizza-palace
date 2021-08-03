@@ -203,3 +203,13 @@ html {
     color: white;
     height: 50px;
 }
+
+.log-titles {
+    text-decoration: underline;
+    font-family: 'Style Script', cursive;
+    font-size: 30px;
+}
+
+#grand-total {
+    color: crimson;
+}
