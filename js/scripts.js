@@ -217,5 +217,6 @@ var myFunction = () => {
             pricer6();
             alert(price)
         }
+        pricer()
     }
 }
