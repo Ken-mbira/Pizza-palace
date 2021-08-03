@@ -78,6 +78,7 @@ $(document).ready(function() {
         pizzaNumber = parseInt($("input#item-number").val());
         pizzaSize = $("input[name=pizza-size]:checked").val();
         pizzaToppings = $("input[name=toppings]:checked").val();
+        crust = $("input[name=crust]:checked").val();
         drinks = $("input[name=drinks]:checked").val();
         mode = $("input[name=mode]:checked").val();
     })
@@ -93,6 +94,7 @@ $(document).ready(function() {
         $("#size-log").text(pizzaSize);
         $("#topping-log").text(pizzaToppings);
         $("#drink-log").text(drinks);
+        $("#crust-log").text(crust)
         myFunction();
         $("#price-log").text(price);
 
@@ -186,6 +188,26 @@ var myFunction = () => {
             pricer3();
 
             var pricer4 = () => {
+                if (crust === "Stuffed") {
+                    price = price + 100;
+                    return price;
+                } else if (crust === "Cracker") {
+                    price = price + 200;
+                    return price;
+                } else if (crust === "Flat") {
+                    price = price + 150;
+                    return price;
+                } else if (crust === "Thin") {
+                    price = price + 80;
+                    return price;
+                } else {
+                    price = price;
+                    return price;
+                }
+            }
+            pricer4();
+
+            var pricer5 = () => {
                 if (drinks === "Soda") {
                     price = price + 100;
                     return price;
@@ -197,9 +219,9 @@ var myFunction = () => {
                     return price;
                 }
             }
-            pricer4();
+            pricer5();
 
-            var pricer5 = () => {
+            var pricer6 = () => {
                 if (mode === "Delivery") {
                     price = price + 200;
                     return price;
@@ -208,13 +230,12 @@ var myFunction = () => {
                     return price;
                 }
             }
-            pricer5();
-
-            var pricer6 = () => {
+            pricer6();
+            var pricer7 = () => {
                 price = price * pizzaNumber;
                 return price;
             }
-            pricer6();
+            pricer7();
             alert(price)
         }
         pricer()
