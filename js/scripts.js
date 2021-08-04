@@ -297,7 +297,6 @@ var myFunction = () => {
             }
             pricer7();
             alert("You can check out at the top now!")
-            alert(price)
         }
         pricer()
     }
