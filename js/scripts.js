@@ -178,6 +178,22 @@ var myFunction = () => {
             pricer1();
 
             var pricer2 = () => {
+                if (pizzaSize === "Large") {
+                    price = price + 100;
+                    sizePrice = 100;
+                    return price;
+                } else if (pizzaSize === "Medium") {
+                    price = price + 50;
+                    sizePrice = 50;
+                    return price;
+                } else {
+                    price = price;
+                    sizePrice = 0;
+                    return price;
+                }
+            }
+            pricer2();
+            var pricer3 = () => {
                 if (pizzaToppings === "Pepperoni") {
                     price = price + 100;
                     toppingPrice = 100;
@@ -193,23 +209,6 @@ var myFunction = () => {
                 } else {
                     price = price;
                     toppingPrice = 0;
-                    return price;
-                }
-            }
-            pricer2();
-
-            var pricer3 = () => {
-                if (pizzaSize === "Large") {
-                    price = price + 100;
-                    sizePrice = 100;
-                    return price;
-                } else if (pizzaSize === "Medium") {
-                    price = price + 50;
-                    sizePrice = 50;
-                    return price;
-                } else {
-                    price = price;
-                    sizePrice = 0;
                     return price;
                 }
             }
