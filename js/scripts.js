@@ -195,17 +195,41 @@ var myFunction = () => {
             pricer2();
             var pricer3 = () => {
                 if (pizzaToppings === "Pepperoni") {
-                    price = price + 100;
-                    toppingPrice = 100;
+                    if (pizzaSize === "Large") {
+                        price = price + 130;
+                        return price;
+                    } else if (pizzaSize === "Medium") {
+                        price = price + 120;
+                        return price;
+                    } else if (pizzaSize === "Small") {
+                        price = price + 100;
+                        return price;
+                    }
                     return price;
                 } else if (pizzaToppings === "Mushrooms") {
-                    price = price + 150;
-                    toppingPrice = 150;
+                    if (pizzaSize === "Large") {
+                        price = price + 190;
+                        return price;
+                    } else if (pizzaSize === "Medium") {
+                        price = price + 170;
+                        return price;
+                    } else if (pizzaSize === "Small") {
+                        price = price + 150;
+                        return price;
+                    }
                     return price;
                 } else if (pizzaToppings === "Onions") {
-                    price = price + 90;
-                    toppingPrice = 90;
-                    return price
+                    if (pizzaSize === "Large") {
+                        price = price + 120;
+                        return price;
+                    } else if (pizzaSize === "Medium") {
+                        price = price + 110;
+                        return price;
+                    } else if (pizzaSize === "Small") {
+                        price = price + 90;
+                        return price;
+                    }
+                    return price;
                 } else {
                     price = price;
                     toppingPrice = 0;
@@ -273,6 +297,7 @@ var myFunction = () => {
             }
             pricer7();
             alert("You can check out at the top now!")
+            alert(price)
         }
         pricer()
     }
