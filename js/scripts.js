@@ -301,6 +301,8 @@ var myFunction = () => {
             pricer6();
             var pricer7 = () => {
                 price = price * pizzaNumber;
+                toppingPrice = toppingPrice * pizzaNumber;
+                crustPrice = crustPrice * pizzaNumber;
                 numberPrice = namePrice * pizzaNumber;
                 return price;
             }
