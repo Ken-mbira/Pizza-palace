@@ -197,36 +197,45 @@ var myFunction = () => {
                 if (pizzaToppings === "Pepperoni") {
                     if (pizzaSize === "Large") {
                         price = price + 130;
+                        toppingPrice = 130;
                         return price;
                     } else if (pizzaSize === "Medium") {
                         price = price + 120;
+                        toppingPrice = 120;
                         return price;
                     } else if (pizzaSize === "Small") {
                         price = price + 100;
+                        toppingPrice = 100;
                         return price;
                     }
                     return price;
                 } else if (pizzaToppings === "Mushrooms") {
                     if (pizzaSize === "Large") {
                         price = price + 190;
+                        toppingPrice = 190;
                         return price;
                     } else if (pizzaSize === "Medium") {
                         price = price + 170;
+                        toppingPrice = 170;
                         return price;
                     } else if (pizzaSize === "Small") {
                         price = price + 150;
+                        toppingPrice = 150;
                         return price;
                     }
                     return price;
                 } else if (pizzaToppings === "Onions") {
                     if (pizzaSize === "Large") {
                         price = price + 120;
+                        toppingPrice = 120;
                         return price;
                     } else if (pizzaSize === "Medium") {
                         price = price + 110;
+                        toppingPrice = 110;
                         return price;
                     } else if (pizzaSize === "Small") {
                         price = price + 90;
+                        toppingPrice = 90;
                         return price;
                     }
                     return price;
